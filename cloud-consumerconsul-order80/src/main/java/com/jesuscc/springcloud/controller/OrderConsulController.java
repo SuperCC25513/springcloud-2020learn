@@ -1,4 +1,4 @@
-package com.juesecc.springcloud.Controller;/**
+package com.jesuscc.springcloud.controller;/**
  * @author wangcc
  * @create
  */
@@ -11,22 +11,23 @@ import org.springframework.web.client.RestTemplate;
 import javax.annotation.Resource;
 
 /**
- * @ClassName OrderZKController
+ * @ClassName OrderConsulController
  * @Author wangcc
- * @Date 18:47 2020/11/3
+ * @Date 15:00 2020/11/19
  **/
 @RestController
 @Slf4j
-public class OrderZKController {
+public class OrderConsulController {
 
     @Resource
     private RestTemplate restTemplate;
 
-    public static final String INVOKE_URL="http://cloud-provider-payment";
+    public static final String INVOKE_URL="http://consul-provider-payment";
 
-    @GetMapping("/consumer/payment/zk")
+    @GetMapping("/consumer/payment/consul")
     public  String paymentInfo(){
-        String result = restTemplate.getForObject(INVOKE_URL + "/payment/zk", String.class);
+        String result = restTemplate.getForObject(INVOKE_URL + "/payment/consul", String.class);
         return result;
     }
+
 }

@@ -1,4 +1,5 @@
-package com.juesecc.springcloud.config;/**
+package com.jesuscc.springcloud.config;
+/**
  * @author wangcc
  * @create
  */

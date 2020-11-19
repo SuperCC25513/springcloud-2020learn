@@ -1,4 +1,4 @@
-package com.juesecc.springcloud;/**
+package com.jesuscc.springcloud;/**
  * @author wangcc
  * @create
  */
@@ -6,17 +6,18 @@ package com.juesecc.springcloud;/**
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import sun.applet.Main;
 
 /**
- * @ClassName OrderZKMain80
+ * @ClassName PaymentMain8006
  * @Author wangcc
- * @Date 18:43 2020/11/3
+ * @Date 14:15 2020/11/19
  **/
 @SpringBootApplication
 @EnableDiscoveryClient
-public class OrderZKMain80 {
+public class PaymentMain8006 {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderZKMain80.class, args);
+        SpringApplication.run(PaymentMain8006.class, args);
     }
 }
