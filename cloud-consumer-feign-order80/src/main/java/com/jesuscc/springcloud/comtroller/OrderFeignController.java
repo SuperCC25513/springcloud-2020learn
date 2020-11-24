@@ -30,4 +30,10 @@ public class OrderFeignController {
     public CommonResult<Payment> getPaumentById(@PathVariable("id") Long id){
         return paymentFeignService.getPaumentById(id);
     }
+
+    @GetMapping(value = "/consumer/payment/feign/timeout")
+    public String paymentFeignTimeout(){
+        //openfeign 客户端默认等待一秒
+        return paymentFeignService.paymentFeignTimeout();
+    }
 }
